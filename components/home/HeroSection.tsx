@@ -8,10 +8,16 @@ export default function HeroSection() {
   const prefersReduced = useReducedMotion()
 
   const fadeUp = (delay: number) => ({
-    initial: { opacity: prefersReduced ? 1 : 0, y: prefersReduced ? 0 : 32 },
+    initial: { opacity: prefersReduced ? 1 : 0, y: prefersReduced ? 0 : 28 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: prefersReduced ? 0 : 0.7, delay: prefersReduced ? 0 : delay },
+    transition: { duration: prefersReduced ? 0 : 0.65, delay: prefersReduced ? 0 : delay, ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number] },
   })
+
+  const heroHeadline = {
+    initial: { opacity: prefersReduced ? 1 : 0, x: prefersReduced ? 0 : -20 },
+    animate: { opacity: 1, x: 0 },
+    transition: { duration: prefersReduced ? 0 : 0.9, delay: prefersReduced ? 0 : 0.2, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
+  }
 
   return (
     <section
@@ -72,8 +78,8 @@ export default function HeroSection() {
 
           {/* Headline */}
           <motion.h1
-            {...fadeUp(0.2)}
-            className="font-playfair text-hero text-cream"
+            {...heroHeadline}
+            className="font-playfair text-hero text-cream italic"
             style={{ lineHeight: 1.05 }}
           >
             Premium

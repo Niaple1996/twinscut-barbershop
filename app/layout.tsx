@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Playfair_Display, Inter } from 'next/font/google'
+import { Playfair_Display, Montserrat } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
@@ -13,10 +13,10 @@ const playfair = Playfair_Display({
   display: 'swap',
 })
 
-const inter = Inter({
-  variable: '--font-inter',
+const montserrat = Montserrat({
+  variable: '--font-montserrat',
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700'],
   display: 'swap',
 })
 
@@ -79,7 +79,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="de" className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="de" className={`${playfair.variable} ${montserrat.variable}`}>
       <body className="min-h-screen flex flex-col">
         <BarberShopSchema />
         <a

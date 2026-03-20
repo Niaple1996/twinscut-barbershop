@@ -99,7 +99,7 @@ export default function TerminPage() {
                 href={businessInfo.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-gold text-[16px] px-10"
+                className="btn btn-gold btn-gold-pulse text-[16px] px-10"
               >
                 Zum Buchungssystem
               </a>

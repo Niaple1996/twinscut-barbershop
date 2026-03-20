@@ -41,8 +41,12 @@ export default function CookieBanner() {
           boxShadow: '0 16px 48px rgba(0,0,0,0.6)',
         }}
       >
-        <p className="text-[13px] font-semibold mb-1" style={{ color: '#F5F0E8' }}>
-          🍪 Cookies
+        <p className="text-[13px] font-semibold mb-1 flex items-center gap-2" style={{ color: '#F5F0E8' }}>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{ color: '#C9A84C' }}>
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 8v4M12 16h.01" />
+          </svg>
+          Cookies
         </p>
         <p className="text-[12px] leading-relaxed mb-4" style={{ color: '#5C564E' }}>
           Wir nutzen technisch notwendige Cookies für den Betrieb dieser Website.{' '}

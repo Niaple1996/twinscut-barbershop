@@ -41,7 +41,7 @@ export default function CTASection() {
 
         <ScrollReveal delay={0.2}>
           <div className="mt-8 flex flex-wrap gap-3 justify-center">
-            <Link href="/termin" className="btn btn-gold">
+            <Link href="/termin" className="btn btn-gold btn-gold-pulse">
               Jetzt online buchen
             </Link>
             <a

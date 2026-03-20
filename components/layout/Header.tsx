@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 import Logo from '@/components/layout/Logo'
 import AnnouncementBar from '@/components/layout/AnnouncementBar'
 import { navItems } from '@/lib/data'
-import { MenuIcon, CloseIcon } from '@/components/ui/Icons'
+import { MenuIcon, CloseIcon, PhoneIcon } from '@/components/ui/Icons'
 
 // ─── Mobile Menu ──────────────────────────────────────────────────────────────
 
@@ -144,7 +144,7 @@ export default function Header() {
           border-radius: 1px;
           transform: scaleX(0);
           transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-          transform-origin: center;
+          transform-origin: left;
         }
         .tc-nav-link:hover::after,
         .tc-nav-link.active::after { transform: scaleX(1); }
@@ -203,7 +203,7 @@ export default function Header() {
                 style={{ color: '#5C564E' }}
                 aria-label="Anrufen"
               >
-                <span style={{ color: '#C9A84C' }}>☎</span>
+                <PhoneIcon size={13} style={{ color: '#C9A84C' }} />
                 <span className="hover:text-[#A89F94] transition-colors">0202 123456</span>
               </a>
               <Link href="/termin" className="btn btn-gold btn-sm hidden sm:inline-flex">

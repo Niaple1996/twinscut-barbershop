@@ -56,7 +56,7 @@ export default function WuppertalSection() {
                       color: '#A89F94',
                     }}
                   >
-                    <span style={{ color: '#C9A84C' }}>📍</span> {n.name}
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{ display: 'inline', verticalAlign: 'middle', marginRight: '2px' }}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>{n.name}
                     <span className="ml-1 text-[11px]" style={{ color: '#5C564E' }}>
                       · {n.note}
                     </span>

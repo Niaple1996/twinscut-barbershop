@@ -156,7 +156,7 @@ function ContactForm() {
             type="text"
             required
             placeholder="Dein Name"
-            className="w-full px-4 py-3 rounded-lg text-[14px] outline-none transition-colors"
+            className="w-full px-4 py-3 rounded-lg text-[14px] transition-colors"
             style={{
               background: '#1a1a1a',
               border: '1px solid #2a2a2a',
@@ -174,7 +174,7 @@ function ContactForm() {
             type="text"
             required
             placeholder="0202 … oder name@mail.de"
-            className="w-full px-4 py-3 rounded-lg text-[14px] outline-none transition-colors"
+            className="w-full px-4 py-3 rounded-lg text-[14px] transition-colors"
             style={{
               background: '#1a1a1a',
               border: '1px solid #2a2a2a',
@@ -193,7 +193,7 @@ function ContactForm() {
           name="subject"
           type="text"
           placeholder="Worum geht es?"
-          className="w-full px-4 py-3 rounded-lg text-[14px] outline-none"
+          className="w-full px-4 py-3 rounded-lg text-[14px]"
           style={{
             background: '#1a1a1a',
             border: '1px solid #2a2a2a',
@@ -212,7 +212,7 @@ function ContactForm() {
           rows={5}
           required
           placeholder="Deine Nachricht ..."
-          className="w-full px-4 py-3 rounded-lg text-[14px] outline-none resize-y"
+          className="w-full px-4 py-3 rounded-lg text-[14px] resize-y"
           style={{
             background: '#1a1a1a',
             border: '1px solid #2a2a2a',

@@ -48,7 +48,7 @@ export default function ServicesPreview() {
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {serviceCategories.map((cat, i) => (
-            <ScrollReveal key={cat.id} direction="up" delay={i * 0.12}>
+            <ScrollReveal key={cat.id} direction="up" delay={i * 0.05}>
               <div
                 className="card-dark p-8 h-full flex flex-col"
                 style={{ borderColor: '#2a2a2a' }}

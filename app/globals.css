@@ -15,8 +15,11 @@
   --color-cream:        #F5F0E8;
   --color-cream-muted:  #A89F94;
   --color-cream-faint:  #5C564E;
+  --color-jet:       #0A0A0A;
+  --color-charcoal:  #1A1A1A;
+  --color-burgundy:  #4A1020;
 
-  --font-sans:     var(--font-inter);
+  --font-sans:     var(--font-montserrat);
   --font-playfair: var(--font-playfair);
 }
 
@@ -31,7 +34,7 @@ html {
 body {
   background: #0a0a0a;
   color: #F5F0E8;
-  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-montserrat), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,6 +42,14 @@ body {
 :focus-visible {
   outline: 2px solid #C9A84C;
   outline-offset: 2px;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #C9A84C;
+  outline-offset: 2px;
+  border-color: rgba(201,168,76,0.5) !important;
 }
 
 /* ─── Typography ────────────────────────────────────────────────────────── */
@@ -90,6 +101,15 @@ h1, h2, h3 {
 .shadow-gold-lg {
   box-shadow: 0 8px 40px rgba(201,168,76,0.40);
 }
+
+@keyframes gold-pulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(201,168,76,0.30); }
+  50%       { box-shadow: 0 4px 36px rgba(201,168,76,0.55), 0 0 0 5px rgba(201,168,76,0.08); }
+}
+.btn-gold-pulse {
+  animation: gold-pulse 4.5s ease-in-out infinite;
+}
+
 .shadow-header {
   box-shadow: 0 1px 0 rgba(201,168,76,0.12), 0 4px 20px rgba(0,0,0,0.4);
 }
